@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mt940-camt-parser"
+version = "0.1.0"
+description = "Zero-dependency parser for SWIFT MT940 and ISO 20022 CAMT.053 bank statements into normalized, exact Decimal models."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Yasin BALÇIK", email = "yasinbalcik74@gmail.com" }]
+license = { text = "MIT" }
+keywords = ["mt940", "camt053", "iso20022", "swift", "bank-statement", "fintech", "banking", "open-banking"]
+
+[project.scripts]
+mt940-camt = "mt940_camt_parser.__main__:main"
